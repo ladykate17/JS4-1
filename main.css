@@ -1,5 +1,76 @@
 /* CSS DOCUMENT */
 
+.align-right {
+	text-align: right;
+}
+
 .BG-change {
 	background-color: pink;
 }
+
+.part {
+	padding: 30px;
+	margin: 30px auto;
+	max-width: 90%;
+	border: 1px solid black;
+}
+
+.add-height {
+	height: 400px;
+}
+
+.rapper {
+	text-align: center;
+}
+
+.giant-btn {
+	width: 400px;
+	height: 80px;
+	background-color: indianred;
+	border-radius: 5px;
+	color: white;
+	border: none;
+	box-shadow: none;
+	margin-top: 100px;
+}
+
+.giant-btn:hover{
+	background-color: rgb(102, 158, 58);
+
+}
+
+/* Lightbox */
+/*.cover {
+	position: fixed;
+	top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.box-content{
+	background-color: #fff;
+	border: solid 2px #ddd;
+	border-radius: 20px;
+	box-sizing: border-box;
+	padding: 20px 20px 45px;
+	width: 40%;
+	margin: 0 auto;
+	top: 20%;
+	position: relative;
+	text-align: center;
+
+}
+
+.close-btn {
+	background-color: red;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 5px;	
+	text-decoration: none;
+	border: none;
+	box-shadow: none;
+
+}*/
