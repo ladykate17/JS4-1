@@ -48,48 +48,50 @@ $(document).on('ready', function() {
 
 
 	// PART 3 //
-	$('.cover').css({
-		'position'	: 'fixed',
-		'top'		: '0',
-		'left'		: '0',
-		'background': 'rgba(0,0,0,0.6)',
-		'z-index'	: '1',
-		'width'		: '100vh',
-		'height '	: '100vh',
-	})
-
-	$('.box-content').css({
-		'background-color'	: '#fff',
-		'border'			: 'solid 2px #ddd',
-		'border-radius'		: '20px',
-		'box-sizing'		: 'border-box',
-		'padding'			: '20px 20px 45px',
-		'width'				: '40%',
-		'margin'			: '0 auto',
-		'top'				: '20%',
-		'position'			: 'relative',
-		'text-align'		: 'center',
-
-	})
-
-	$('.close-btn').css({
-		'background-color'	: 'red',
-		'color'				: 'white',
-		'padding'			: '5px 10px',
-		'border-radius'		: '5px',
-		'text-decoration'	: 'none',
-		'border'			: 'none',
-		'box-shadow'		: 'none',
-	})
 	
 	var popupBox = $('<div class="cover"><div class="box-content"><div class="align-right"><button class="close-btn">X</button></div><h3>You other brothers cant deny</h3><p>When a DOM walks in with some itty-bitty space and a rounded thing in your face...</p></div></div>'); 
 
 	$('.popup').on('click', function(){
 		$('body').before(popupBox);
+	
+		$('.close-btn').on('click', function(c){
+			$(popupBox).remove()
+		});
+		
+		$('.cover').css({
+			'position'	: 'fixed',
+			'top'		: '0',
+			'left'		: '0',
+			'background': 'rgba(0,0,0,0.6)',
+			'z-index'	: '1',
+			'width'		: '100%',
+			'height'	: '100%',
+		});
+
+		$('.box-content').css({
+			'background-color'	: '#fff',
+			'border'			: 'solid 2px #ddd',
+			'border-radius'		: '20px',
+			'box-sizing'		: 'border-box',
+			'padding'			: '20px 20px 45px',
+			'width'				: '40%',
+			'margin'			: '0 auto',
+			'top'				: '20%',
+			'position'			: 'relative',
+			'text-align'		: 'center',
+
+		});
+
+		$('.close-btn').css({
+			'background-color'	: 'red',
+			'color'				: 'white',
+			'padding'			: '5px 10px',
+			'border-radius'		: '5px',
+			'text-decoration'	: 'none',
+			'border'			: 'none',
+			'box-shadow'		: 'none',
+		});
 	})
 
-	$('').on('click', function(){
-		$(this).remove(popupBox);
-		console.log('close');
-	})
+		
 });
